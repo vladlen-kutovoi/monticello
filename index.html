@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monticello</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e5dfc6ace2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 class="visually-hidden">Monticello</h1>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo-link">
+        <img src="img/logo.png" alt="Monticello logo" width="200" height="45">
+      </a>
+      <nav class="header__nav">
+        <h2 class="visually-hidden">Main navigation</h2>
+        <button class="menu-button">
+          <span class="visually-hidden">Menu button</span>
+          <span class="menu-button__item"></span>
+        </button>
+        <div class="mobile-menu">
+          <ul class="main-menu">
+            <li class="main-menu__item main-menu__item_active">
+              <a class="main-menu__link" href="#">About us</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Projects</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">News</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Facebook</span>
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Twitter</span>
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Instagram</span>
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-slider">
+        <ul class="hero-slider__list">
+          <li class="hero-slider__item">
+            <h3 class="hero__heading">Simple & Modern</h3>
+            <p class="hero__subheading">We make the world beautiful every day</p>
+          </li>
+          <li class="hero-slider__item">
+            <h3 class="hero__heading">Complex & Old</h3>
+            <p class="hero__subheading">We make the world beautiful every day</p>
+          </li>
+          <li class="hero-slider__item">
+            <h3 class="hero__heading">Clever & Serious</h3>
+            <p class="hero__subheading">We make the world beautiful every day</p>
+          </li>
+          <li class="hero-slider__item">
+            <h3 class="hero__heading">Dumm & Funny</h3>
+            <p class="hero__subheading">We make the world beautiful every day</p>
+          </li>
+          <li class="hero-slider__item">
+            <h3 class="hero__heading">Last & Least</h3>
+            <p class="hero__subheading">We make the world beautiful every day</p>
+          </li>
+        </ul>
+      </div>
+      <a href="#projects" class="arrow-button hero__button-down">
+        <span class="visually-hidden">Scroll down</span>
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h3 class="heading">What we do</h3>
+        <ul class="project-list">
+          <li class="project-list__item">
+            <img src="img/project-1.jpg" alt="One world trade center" class="project__img" width="290" height="216">
+            <div class="project__description">
+              <p class="project__subheading heading">One world</p>
+              <h4 class="project__heading heading">Trade center</h4>
+              <p class="project__text">Increasing prosperity in our lives can be accomplished by having the right frame
+                of mind. The truth is, our thoughts are very powerful.</p>
+              <button class="button">More details</button>
+              <p class="project__location"><i class="fa-solid fa-location-dot"></i>New York City, United States - 1776
+                feet</p>
+            </div>
+          </li>
+          <li class="project-list__item">
+            <img src="img/project-2.jpg" alt="International commerce center" class="project__img">
+            <div class="project__description">
+              <p class="project__subheading heading">International</p>
+              <h4 class="project__heading heading">Commerce center</h4>
+              <p class="project__text">Successful businesses have many things in common, today we’ll look at the big ‘R’
+                of recognition and how a digital advertising network may help.</p>
+              <button class="button">More details</button>
+              <p class="project__location"><i class="fa-solid fa-location-dot"></i>Hong Kong - 1588 feet</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"
+    integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
