@@ -76,4 +76,16 @@ html {
   text-align: center;
   color: $color-blue-dark;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: $color-blue-dark;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

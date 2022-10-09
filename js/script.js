@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   toggleMobileMenu();
   runHeroSlider();
+  runNewsSlider();
 });
 function toggleMobileMenu() {
   const NAV = document.querySelector('.header__nav');
@@ -37,8 +38,21 @@ function runHeroSlider() {
       settings: {
         dots: true,
       }
-    }
-
-    ],
+    }],
   });
-}
+};
+function runNewsSlider() {
+  $('.news').slick({
+    autoplay: true,
+    arrows: false,
+    infinite: true,
+    mobileFirst: true,
+    dots: true,
+    responsive: [{
+      breakpoint: 800,
+      settings: {
+        variableWidth: true,
+      }
+    }],
+  });
+};
