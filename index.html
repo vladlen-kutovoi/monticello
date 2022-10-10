@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -250,7 +253,100 @@
         </div>
       </div>
     </section>
+    <section class="gallery-section">
+      <div class="container">
+        <h3 class="heading">Gallery</h3>
+        <ul class="gallery">
+          <li class="gallery__item">
+            <a href="img/hero-2.jpg" class="gallery__link">
+              <img src="img/gallery-1.jpg" alt="Photo of a building" class="gallery__img">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="img/hero-3.jpg" class="gallery__link">
+              <img src="img/gallery-2.jpg" alt="Photo of a building" class="gallery__img">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="img/hero-4.jpg" class="gallery__link">
+              <img src="img/gallery-3.jpg" alt="Photo of a building" class="gallery__img">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="img/hero-5.jpg" class="gallery__link">
+              <img src="img/gallery-4.jpg" alt="Photo of a building" class="gallery__img">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="img/hero-1.jpg" class="gallery__link">
+              <img src="img/gallery-5.jpg" alt="Photo of a building" class="gallery__img">
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="button">See more</a>
+      </div>
+    </section>
+    <section class="contacts-section">
+      <div id="map" class="map"></div>
+      <div class="contacts">
+        <h3 class="heading">Get in touch</h3>
+        <div class="contacts__wrapper">
+          <ul class="contacts__info">
+            <li class="contacts__info__item">
+              <p><i class="fa-solid fa-location-dot"></i>91 Nolan Extensions Suite 670</p>
+            </li>
+            <li class="contacts__info__item">
+              <p><i class="fa-solid fa-phone"></i>+001 356-868-2454</p>
+            </li>
+            <li class="contacts__info__item">
+              <p><i class="fa-solid fa-inbox"></i>montichello@service.com</p>
+            </li>
+            <li class="contacts__info__item">
+              <p><i class="fa-regular fa-clock"></i>From 07:05AM to 19:30PM</p>
+            </li>
+          </ul>
+          <form class="contacts__form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__background">
+      <div class="container">
+        <div class="text-wrapper">
+          <a href="#" class="logo-link">
+            <img src="img/logo.png" alt="Monticello logo" width="200" height="45">
+          </a>
+          <p class="copyright">Copyrights &#169 2020 Montichello</p>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <span class="visually-hidden">Facebook</span>
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <span class="visually-hidden">Twitter</span>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <span class="visually-hidden">Instagram</span>
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"
@@ -258,7 +354,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+.contacts {
+  position: absolute;
+  left: 50%;
+  bottom: -150px;
+  transform: translateX(-50%);
+  box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
+
+  &__info {
+    margin-bottom: 0;
+  }
+}

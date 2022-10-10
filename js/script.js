@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleMobileMenu();
   runHeroSlider();
   runNewsSlider();
+  runGalleryPopup();
 });
+
 function toggleMobileMenu() {
   const NAV = document.querySelector('.header__nav');
   const MENU_BUTTON = NAV.querySelector('.menu-button');
@@ -20,6 +22,7 @@ function toggleMobileMenu() {
     })
   })
 }
+
 function runHeroSlider() {
   $('.hero-slider__list').slick({
     autoplay: true,
@@ -41,6 +44,7 @@ function runHeroSlider() {
     }],
   });
 };
+
 function runNewsSlider() {
   $('.news').slick({
     autoplay: true,
@@ -54,5 +58,32 @@ function runNewsSlider() {
         variableWidth: true,
       }
     }],
+  });
+};
+
+function runGalleryPopup() {
+  $('.gallery__link').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+  });
+};
+
+function initMap() {
+  let center = { lat: 40.66269967882884, lng: -73.89080823791476, };
+  let icon = {
+    url: '../img/map-marker.svg',
+
+  };
+  const MAP = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: center,
+    disableDefaultUI: true,
+  });
+  let marker = new google.maps.Marker({
+    position: { lat: 40.677477470289496, lng: -73.90631677431017 },
+    map: MAP,
+    icon: icon,
   });
 };
