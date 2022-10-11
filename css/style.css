@@ -578,7 +578,7 @@ html {
   margin-bottom: 40px;
 }
 .news__item:hover .news__img, .news__item:focus .news__img {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 .news__img-link {
   display: flex;
@@ -587,7 +587,7 @@ html {
 .news__img {
   width: 100%;
   height: auto;
-  transition: scale 0.5s ease;
+  transition: transform 0.5s ease;
 }
 .news__text-wrapper {
   padding: 30px 20px;

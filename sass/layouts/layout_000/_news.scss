@@ -55,7 +55,7 @@
     &:hover,
     &:focus {
       .news__img {
-        scale: 1.2;
+        transform: scale(1.2);
       }
     }
   }
@@ -68,7 +68,7 @@
   &__img {
     width: 100%;
     height: auto;
-    transition: scale .5s ease;
+    transition: transform .5s ease;
   }
 
   &__text-wrapper {

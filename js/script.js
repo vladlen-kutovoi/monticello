@@ -19,8 +19,8 @@ function toggleMobileMenu() {
     item.addEventListener('click', function () {
       NAV.classList.remove('header__nav_active');
       document.body.classList.remove('no-scroll');
-    })
-  })
+    });
+  });
 }
 
 function runHeroSlider() {
@@ -43,7 +43,7 @@ function runHeroSlider() {
       }
     }],
   });
-};
+}
 
 function runNewsSlider() {
   $('.news').slick({
@@ -59,7 +59,7 @@ function runNewsSlider() {
       }
     }],
   });
-};
+}
 
 function runGalleryPopup() {
   $('.gallery__link').magnificPopup({
@@ -68,7 +68,7 @@ function runGalleryPopup() {
       enabled: true
     },
   });
-};
+}
 
 function initMap() {
   let center = { lat: 40.66269967882884, lng: -73.89080823791476, };
@@ -86,4 +86,4 @@ function initMap() {
     map: MAP,
     icon: icon,
   });
-};
+}
