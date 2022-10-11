@@ -487,6 +487,9 @@ html {
 .project-list__item:not(:last-of-type) {
   margin-bottom: 50px;
 }
+.project-list .heading::before {
+  content: none;
+}
 
 .project__description {
   padding-bottom: 25px;

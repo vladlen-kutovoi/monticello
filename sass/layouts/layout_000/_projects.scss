@@ -22,6 +22,10 @@
       margin-bottom: 50px;
     }
   }
+
+  .heading::before {
+    content: none;
+  }
 }
 
 .project {
