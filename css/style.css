@@ -245,7 +245,7 @@ html {
 }
 
 .slick-arrow {
-  display: none;
+  display: none !important;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1029,7 +1029,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 @media only screen and (min-width: 1370px) {
   .news-section .slick-arrow {
-    display: flex;
+    display: flex !important;
   }
 }
 

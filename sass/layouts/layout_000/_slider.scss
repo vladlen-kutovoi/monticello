@@ -26,7 +26,7 @@
 }
 
 .slick-arrow {
-  display: none;
+  display: none !important;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
