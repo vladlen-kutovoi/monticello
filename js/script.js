@@ -48,10 +48,12 @@ function runHeroSlider() {
 function runNewsSlider() {
   $('.news').slick({
     autoplay: true,
-    arrows: false,
     infinite: true,
     mobileFirst: true,
     dots: true,
+    arrows: true,
+    prevArrow: $('.news__slick-prev'),
+    nextArrow: $('.news__slick-next'),
     responsive: [{
       breakpoint: 800,
       settings: {
