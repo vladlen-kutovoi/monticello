@@ -52,14 +52,9 @@ function runNewsSlider() {
     mobileFirst: true,
     dots: true,
     arrows: true,
+    variableWidth: true,
     prevArrow: $('.news__slick-prev'),
     nextArrow: $('.news__slick-next'),
-    responsive: [{
-      breakpoint: 800,
-      settings: {
-        variableWidth: true,
-      }
-    }],
   });
 }
 

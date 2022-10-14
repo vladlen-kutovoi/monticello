@@ -34,10 +34,18 @@
   .slick-dots {
     justify-content: center;
   }
+
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+  }
 }
 
 .news-wrapper {
-  max-width: 370px;
+  max-width: 290px;
   margin: 0 auto;
   position: relative;
 }
@@ -48,10 +56,15 @@
   }
 
   &__item {
-    max-width: 370px;
+    max-width: 290px;
     min-height: 514px;
+    height: 100%;
     background-color: $color-white;
     margin-bottom: 40px;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
 
     &:hover,
     &:focus {
