@@ -168,7 +168,7 @@ html {
 }
 
 .button {
-  width: 190px;
+  width: 100%;
   min-height: 50px;
   padding: 15px;
   border: solid 1px #2C4058;
@@ -813,7 +813,6 @@ html {
 }
 .contacts__form .button {
   margin: 0 auto;
-  max-width: 140px;
   font-size: 18px;
   padding: 12px;
 }
@@ -869,6 +868,9 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media only screen and (min-width: 576px) {
+  .button {
+    width: 190px;
+  }
   .logo-link img {
     width: 241px;
     height: auto;
@@ -900,6 +902,7 @@ a[href^="https://maps.google.com/maps"] {
     margin-bottom: 0 15px 0 0;
   }
   .contacts .button {
+    width: 140px;
     margin: 0 0 0 auto;
   }
 }
