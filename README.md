@@ -4,7 +4,7 @@ Home page of Architecture company.
 ___
 
 #### :link: Live Demo: 
-[Travel blog](https://vladlen-kutovoi.github.io/monticello/)
+[Website](https://vladlen-kutovoi.github.io/monticello/)
 
 [Design](https://www.figma.com/file/wqlFV9VWa3oxnvvexwAy4V/Exam%232?node-id=0%3A1)
 ___
