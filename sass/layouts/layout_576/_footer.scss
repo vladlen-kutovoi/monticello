@@ -1,0 +1,11 @@
+.footer {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .text-wrapper {
+    margin: 0 30px 0 0;
+  }
+}

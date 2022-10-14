@@ -1,0 +1,41 @@
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: solid 1px $color-white;
+    border-radius: 50%;
+    background-color: transparent;
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+
+  li.slick-active button {
+    background-color: $color-white;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+  position: absolute;
+  top: 42%;
+  z-index: 2;
+}
+
+.slick-prev {
+  left: -100px;
+}
+
+.slick-next {
+  right: -100px;
+}

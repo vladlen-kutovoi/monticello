@@ -1,0 +1,70 @@
+.gallery-section {
+  padding-top: 65px;
+  margin-bottom: 65px;
+  position: relative;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    margin-bottom: 50px;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 60px;
+
+  &__item {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: $color-blue-dark;
+
+    &:first-of-type {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    &:hover,
+    &:focus {
+      .gallery__img {
+        transform: scale(1.2);
+        opacity: 80%;
+      }
+
+      .gallery__link::before {
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    &::before {
+      content: url('../img/zoom.svg');
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .5s ease;
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+  }
+}

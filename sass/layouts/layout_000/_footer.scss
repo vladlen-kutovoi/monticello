@@ -1,0 +1,31 @@
+.footer {
+  background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+
+  &__background {
+    padding: 205px 0 235px;
+    background-image: url('../img/footer-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-link,
+  .text-wrapper {
+    margin-bottom: 41px;
+  }
+
+  .copyright {
+    font-family: $font-monts;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-white;
+  }
+}

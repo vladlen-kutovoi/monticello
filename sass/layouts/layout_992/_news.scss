@@ -1,0 +1,19 @@
+.news-section {
+  padding: 154px 0 120px;
+
+  .heading {
+    margin-bottom: 95px;
+  }
+}
+
+.news-wrapper {
+  max-width: 770px;
+}
+
+.news {
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
