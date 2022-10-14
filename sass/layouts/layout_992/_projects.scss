@@ -1,9 +1,9 @@
 .projects-section {
-  padding-top: 130px;
-  margin-bottom: 180px;
+  padding-top: 134px;
+  margin-bottom: 150px;
 
   h3 {
-    margin-bottom: 158px;
+    margin-bottom: 153px;
   }
 }
 
@@ -30,7 +30,7 @@
 
     &:nth-of-type(odd) {
       &::before {
-        left: -215px;
+        left: -260px;
       }
     }
 
@@ -38,7 +38,7 @@
       flex-direction: row-reverse;
 
       &::before {
-        right: -215px;
+        right: -260px;
         background-color: $color-purple;
       }
 

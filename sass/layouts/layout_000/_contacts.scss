@@ -10,12 +10,12 @@
 .contacts {
   max-width: 770px;
   margin: 0 auto;
-  padding: 90px 60px 70px;
+  padding: 95px 60px 70px;
   background-color: $color-white;
   z-index: 2;
 
   .heading {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   &__wrapper {
@@ -35,6 +35,10 @@
       width: 18px;
       margin-right: 10px;
       color: $color-purple;
+
+      &::before {
+        font-size: 14px;
+      }
     }
 
     &__item {
@@ -83,6 +87,8 @@
     .button {
       margin: 0 auto;
       max-width: 140px;
+      font-size: 18px;
+      padding: 12px;
 
       &:hover,
       &:focus {
